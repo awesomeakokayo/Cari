@@ -2,7 +2,6 @@
 import { 
   X, 
   ShieldCheck, 
-  Star, 
   MapPin, 
   Building2, 
   GraduationCap, 
@@ -14,6 +13,8 @@ import {
   BookOpen
 } from 'lucide-react';
 
+// TODO(cari): not currently rendered (ProfileModal is used instead). Confirm
+// fields before use — doctor.rating/reviewsCount were removed as unverifiable.
 export default function DoctorDetailModal({ doctor, isOpen, onClose, onBookNow }) {
   if (!isOpen || !doctor) return null;
 
@@ -55,11 +56,7 @@ export default function DoctorDetailModal({ doctor, isOpen, onClose, onBookNow }
                   <MapPin className="w-3.5 h-3.5 text-cari-400" />
                   {doctor.location}
                 </span>
-                <span>•</span>
-                <span className="flex items-center gap-1 text-amber-300 font-bold">
-                  <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                  {doctor.rating} ({doctor.reviewsCount} reviews)
-                </span>
+
               </div>
             </div>
           </div>

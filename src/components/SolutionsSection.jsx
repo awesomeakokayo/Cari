@@ -14,6 +14,8 @@ import {
 } from 'lucide-react';
 import { SOLUTIONS_LIST } from '../data/solutionsData';
 
+// TODO(cari): not currently rendered. Confirm positioning and audience copy
+// before this section is used.
 export default function SolutionsSection() {
   const [activeCategory, setActiveCategory] = useState('All');
 
@@ -31,15 +33,15 @@ export default function SolutionsSection() {
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/20 text-cyan-300 text-xs font-bold border border-cyan-500/30">
             <Layers className="w-3.5 h-3.5" />
-            <span>Pan-African Health Ecosystem</span>
+            <span>Healthcare Ecosystem</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
-            Tailored Healthcare Solutions for Africa
+            Tailored Healthcare Solutions
           </h2>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Whether you run a 500-bed teaching hospital in Ibadan, a private fertility clinic in Lagos, a diagnostic laboratory in Accra, or a rural outreach program, Cari equips your organization with specialized digital health tooling.
+            Whether you run a large teaching hospital, a private clinic, a diagnostic laboratory, or a rural outreach program, Cari equips your organization with specialized digital health tooling.
           </p>
         </div>
 

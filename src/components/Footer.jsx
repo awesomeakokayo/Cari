@@ -19,7 +19,7 @@ export default function Footer({ onNavigate }) {
               </span>
             </div>
             <p className="text-slate-400 text-xs leading-relaxed max-w-xs">
-              Modern electronic health record platform and doctor network for Africa.
+              Modern electronic health record platform and doctor network.
             </p>
           </div>
 
@@ -77,11 +77,12 @@ export default function Footer({ onNavigate }) {
 
         {/* Bottom Copyright matching exact website text */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400 text-xs">
+          {/* TODO(cari): confirm exact legal entity name before launch */}
           <div>
-            © 2021 – 2026 Cari Finance, Inc. All rights reserved.
+            © 2021 – 2026 Cari Medical. All rights reserved.
           </div>
           <div>
-            Cari — Modern Healthcare Platform for Africa | Cari
+            Cari Medical — Making healthcare more accessible &amp; affordable
           </div>
         </div>
 

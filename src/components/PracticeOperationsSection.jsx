@@ -34,7 +34,7 @@ export default function PracticeOperationsSection() {
             </p>
 
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              We make it easy to monitor the status of your claims and payments. We also make it easy to monitor the status of your patients and staff.
+              Track the status of your claims and payments, along with your patients and staff.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function PracticeOperationsSection() {
             </p>
 
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              We give you a simple and easy way to monitor and reduce the wait time of your patients and keep an eye on critical situations.
+              Monitor and reduce patient wait times, and keep an eye on critical situations.
             </p>
           </div>
 
@@ -68,11 +68,11 @@ export default function PracticeOperationsSection() {
             </h3>
 
             <p className="text-sm font-semibold text-slate-800">
-              Keep your team and patients in the loop with our communication tools.
+              Keep your team and patients in the loop.
             </p>
 
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              We make it easy to communicate with your team and patients. This allows for increased productivity and better patient outcomes.
+              Clear communication tools lead to better productivity and better patient outcomes.
             </p>
           </div>
 

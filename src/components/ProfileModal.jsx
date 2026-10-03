@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import { X, Calendar, MapPin, CheckCircle2, Award } from 'lucide-react';
+import { DoctorAvatar } from './DoctorSection';
 
 export default function ProfileModal({ doctor, isOpen, onClose, onBookNow }) {
   if (!isOpen || !doctor) return null;
@@ -20,11 +21,7 @@ export default function ProfileModal({ doctor, isOpen, onClose, onBookNow }) {
 
         {/* Doctor Header */}
         <div className="flex items-center gap-4">
-          <img
-            src={doctor.avatar}
-            alt={doctor.name}
-            className="w-20 h-20 rounded-full object-cover border border-slate-200"
-          />
+          <DoctorAvatar doctor={doctor} className="w-20 h-20" />
           <div>
             <div className="flex items-center gap-1.5 text-xs font-semibold text-[#00a859]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#00a859]" />

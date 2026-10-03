@@ -16,7 +16,7 @@ export default function App() {
   const [currentLang, setCurrentLang] = useState('en');
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedSpecialty, setSelectedSpecialty] = useState('All specialties');
-  const [selectedLocation, setSelectedLocation] = useState('Near me (Ibadan, Nigeria)');
+  const [selectedLocation, setSelectedLocation] = useState('Near me');
 
   // Modals
   const [selectedDoctorForBooking, setSelectedDoctorForBooking] = useState(null);
@@ -140,7 +140,7 @@ export default function App() {
               <div>
                 <h4 className="text-sm font-bold">Cari EHR & Audio Notes Walkthrough</h4>
                 <p className="text-xs text-slate-400 mt-1 max-w-sm">
-                  Demonstrating audio voice dictation, digital prescriptions, and instant clinic operations across Africa.
+                  Demonstrating audio voice dictation, digital prescriptions, and simpler clinic operations.
                 </p>
               </div>
             </div>

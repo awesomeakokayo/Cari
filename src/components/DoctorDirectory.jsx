@@ -1,7 +1,6 @@
 ﻿import React from 'react';
 import { 
   ShieldCheck, 
-  Star, 
   MapPin, 
   Clock, 
   Calendar, 
@@ -15,6 +14,8 @@ import {
   Sparkles
 } from 'lucide-react';
 
+// TODO(cari): not currently rendered. Some fields referenced below
+// (nextAvailable, feeLocal) don't exist in doctorsData — fix before use.
 export default function DoctorDirectory({ 
   doctors, 
   specialties, 
@@ -155,11 +156,6 @@ export default function DoctorDirectory({
                     <div className="flex items-center justify-between text-slate-500">
                       <span className="text-[11px] font-mono text-slate-400 truncate">
                         {doc.license}
-                      </span>
-                      <span className="flex items-center gap-1 font-bold text-amber-600 text-xs">
-                        <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                        <span>{doc.rating}</span>
-                        <span className="text-slate-400 font-normal">({doc.reviewsCount})</span>
                       </span>
                     </div>
 

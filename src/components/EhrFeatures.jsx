@@ -18,6 +18,8 @@ import {
 } from 'lucide-react';
 import { EHR_FEATURES } from '../data/solutionsData';
 
+// TODO(cari): not currently rendered. Contains placeholder claims (HMO counts,
+// wait-time and revenue figures) — confirm or remove before this is used.
 export default function EhrFeatures({ t }) {
   const [activeTab, setActiveTab] = useState('finances');
 
@@ -37,7 +39,7 @@ export default function EhrFeatures({ t }) {
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            From reducing patient wait times and auto-adjudicating HMO insurance claims to direct lab dispatches, Cari provides the complete operating system for modern African health centres.
+            From reducing patient wait times and auto-adjudicating HMO insurance claims to direct lab dispatches, Cari provides the complete operating system for modern health centres.
           </p>
         </div>
 
@@ -285,7 +287,7 @@ export default function EhrFeatures({ t }) {
                   AI-Assisted Early Diagnosis & Risk Prevention
                 </h3>
                 <p className="text-sm text-slate-600 leading-relaxed">
-                  Machine learning trained on regional disease patterns across Africa helps doctors detect early signs of malaria complications, hypertensive crisis, diabetic nephropathy, and preeclampsia before severe symptoms arise.
+                  Machine learning trained on regional disease patterns helps doctors detect early signs of malaria complications, hypertensive crisis, diabetic nephropathy, and preeclampsia before severe symptoms arise.
                 </p>
                 <div className="space-y-2 pt-2 text-xs font-semibold text-slate-700">
                   <div className="flex items-center gap-2">
@@ -294,7 +296,7 @@ export default function EhrFeatures({ t }) {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-cari-600" />
-                    <span>Automated clinical guidelines (WHO & West African Health Org)</span>
+                    <span>Automated clinical guidelines (WHO)</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-cari-600" />

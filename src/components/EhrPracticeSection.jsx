@@ -52,7 +52,7 @@ export default function EhrPracticeSection({ onGetStarted, onWatchVideo }) {
             </h2>
 
             <p className="text-base sm:text-lg text-emerald-50 font-normal leading-relaxed max-w-2xl drop-shadow-xs">
-              Cari Medical is a modern electronic health record platform. We've created a pleasant, effortless experience giving clinicians more focused time with their patients.
+              Cari Medical is a modern electronic health record platform. We've created a pleasant, effortless experience that gives clinicians more focused time with their patients.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -60,7 +60,7 @@ export default function EhrPracticeSection({ onGetStarted, onWatchVideo }) {
                 onClick={onGetStarted}
                 className="px-8 py-3.5 rounded-full bg-white hover:bg-emerald-50 text-[#00a859] text-sm font-bold transition-all shadow-md hover:scale-[1.02] active:scale-[0.98]"
               >
-                Get started free
+                Get started
               </button>
               <button
                 onClick={onWatchVideo}
@@ -101,7 +101,7 @@ export default function EhrPracticeSection({ onGetStarted, onWatchVideo }) {
                   </span>
                 </div>
                 <p className="text-sm text-slate-600 mt-2 leading-relaxed font-normal">
-                  Regain hours by recording your notes instead of typing. We transcribe the audio and translate it into multiple languages.
+                  Record your notes instead of typing them. We transcribe the audio and translate it into multiple languages.
                 </p>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function EhrPracticeSection({ onGetStarted, onWatchVideo }) {
                   </span>
                 </div>
                 <p className="text-sm text-slate-600 mt-2 leading-relaxed font-normal">
-                  We use machine learning to help you detect early signs of problems more accurately and reduce medication errors.
+                  Machine learning helps you spot early signs of problems and reduce medication errors.
                 </p>
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function EhrPracticeSection({ onGetStarted, onWatchVideo }) {
                   </span>
                 </div>
                 <p className="text-sm text-slate-600 mt-2 leading-relaxed font-normal">
-                  We make it easy for you to request prescriptions, labs, and image studies directly from the patient's record.
+                  Request prescriptions, labs, and imaging directly from the patient's record.
                 </p>
               </div>
             </div>

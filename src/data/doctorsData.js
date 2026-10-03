@@ -1,4 +1,8 @@
-﻿export const DOCTORS = [
+﻿// TODO(cari): ALL doctor records below are demo/sample data.
+// License numbers in particular must be replaced with real data (or clearly
+// labelled as samples) before this page is shown as live. Locations, clinics,
+// fees, education, experience and availability are also sample values.
+export const DOCTORS = [
   {
     id: "doc-1",
     name: "Dr. Michael Chen",
@@ -10,12 +14,10 @@
     city: "Accra",
     avatar: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400",
     experienceYears: 12,
-    rating: 4.9,
-    reviewsCount: 124,
     clinic: "Ridge Medical Centre, Accra",
     fee: "GH₵ 420",
     nextSlot: "Today at 2:30 PM",
-    bio: "Dr. Michael Chen is a senior consultant in Internal Medicine with extensive experience in managing complex chronic conditions including hypertension, diabetes, and cardiovascular wellness across West Africa.",
+    bio: "Dr. Michael Chen is a senior consultant in Internal Medicine with extensive experience in managing complex chronic conditions including hypertension, diabetes, and cardiovascular wellness.",
     education: "MBChB - University of Ghana Medical School; Fellow of West African College of Physicians"
   },
   {
@@ -27,10 +29,8 @@
     license: "LIC-GH-2021-089",
     location: "Kumasi, Ghana",
     city: "Kumasi",
-    avatar: "https://images.unsplash.com/photo-1594824813637-450f3c559850?auto=format&fit=crop&q=80&w=400",
+    avatar: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=400",
     experienceYears: 14,
-    rating: 4.95,
-    reviewsCount: 98,
     clinic: "Komfo Anokye Orthopedic Pavilion",
     fee: "GH₵ 550",
     nextSlot: "Tomorrow at 10:00 AM",
@@ -48,8 +48,6 @@
     city: "Ibadan",
     avatar: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=400",
     experienceYears: 16,
-    rating: 4.98,
-    reviewsCount: 167,
     clinic: "UCH Neuro-Specialist Centre, Ibadan",
     fee: "₦35,000",
     nextSlot: "Today at 4:00 PM",
@@ -67,8 +65,6 @@
     city: "Lagos",
     avatar: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400",
     experienceYears: 11,
-    rating: 4.92,
-    reviewsCount: 210,
     clinic: "Victoria Island Maternal Care Hub, Lagos",
     fee: "₦30,000",
     nextSlot: "Tomorrow at 9:00 AM",
@@ -86,8 +82,6 @@
     city: "Accra",
     avatar: "https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&q=80&w=400",
     experienceYears: 15,
-    rating: 4.97,
-    reviewsCount: 185,
     clinic: "Accra Heart & Vascular Diagnostic Centre",
     fee: "GH₵ 600",
     nextSlot: "Today at 2:15 PM",
@@ -106,7 +100,7 @@ export const SPECIALTIES = [
 ];
 
 export const LOCATIONS = [
-  "Near me (Ibadan, Nigeria)",
+  "Near me",
   "Ibadan, Nigeria",
   "Lagos, Nigeria",
   "Accra, Ghana",

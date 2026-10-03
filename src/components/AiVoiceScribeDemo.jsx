@@ -17,6 +17,8 @@ import {
 } from 'lucide-react';
 import { CLINICAL_AUDIO_PRESETS } from '../data/solutionsData';
 
+// TODO(cari): not currently rendered. Placeholder claims (time saved, engine
+// names, dialect list) — confirm or remove before this demo is used.
 export default function AiVoiceScribeDemo({ t }) {
   const [selectedPresetIndex, setSelectedPresetIndex] = useState(0);
   const [isRecording, setIsRecording] = useState(false);
@@ -81,7 +83,7 @@ export default function AiVoiceScribeDemo({ t }) {
         <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cari-500/20 border border-cari-500/30 text-cari-300 text-xs font-bold">
             <Sparkles className="w-3.5 h-3.5 text-cari-400" />
-            <span>Proprietary African Clinical NLP Engine</span>
+            <span>Clinical NLP Engine</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
@@ -89,7 +91,7 @@ export default function AiVoiceScribeDemo({ t }) {
           </h2>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Doctors regain over 2.5 hours every day. Dictate naturally in clinic or on ward rounds — Cari transcribes, extracts ICD-10 diagnostic codes, structures SOAP charts, and auto-translates patient discharge instructions into local African dialects.
+            Doctors regain time every day. Dictate naturally in clinic or on ward rounds — Cari transcribes, extracts ICD-10 diagnostic codes, structures SOAP charts, and auto-translates patient discharge instructions into multiple languages.
           </p>
         </div>
 

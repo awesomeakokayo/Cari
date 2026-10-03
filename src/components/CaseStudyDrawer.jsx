@@ -15,6 +15,8 @@ import {
   ExternalLink
 } from 'lucide-react';
 
+// TODO(cari): not currently rendered. This is internal redesign/portfolio
+// content (job-application text) — likely delete before the site ships.
 export default function CaseStudyDrawer({ isOpen, onClose }) {
   const [activeTab, setActiveTab] = useState('overview');
 
@@ -98,7 +100,7 @@ export default function CaseStudyDrawer({ isOpen, onClose }) {
                   Why I Built This Redesign for Cari
                 </h4>
                 <p className="text-cari-900 text-xs leading-relaxed">
-                  "I am applying to join Cari because I deeply believe in the mission to build Africa's modern digital health operating system. When I examined the current live site, I saw immense untapped potential. A digital health company with proprietary AI audio transcribing and EHR infrastructure deserves a web experience that commands clinical authority, patient trust, and enterprise conversion."
+                  "I am applying to join Cari because I deeply believe in the mission to build a modern digital health operating system. When I examined the current live site, I saw immense untapped potential. A digital health company with proprietary AI audio transcribing and EHR infrastructure deserves a web experience that commands clinical authority, patient trust, and enterprise conversion."
                 </p>
               </div>
 
@@ -157,7 +159,7 @@ export default function CaseStudyDrawer({ isOpen, onClose }) {
                     <span>Redesign Transformation</span>
                   </div>
                   <ul className="space-y-1.5 text-emerald-800 text-[11px] list-disc list-inside">
-                    <li>Verified MDCN/MDCG licensed doctor cards with rich photos</li>
+                    <li>Verified licensed doctor cards with rich photos</li>
                     <li>Deep surgical slate + emerald medical design system</li>
                     <li>Interactive 4-step appointment booking with confetti</li>
                     <li>Live interactive AI Voice Dictation & SOAP note simulator</li>
@@ -199,8 +201,7 @@ export default function CaseStudyDrawer({ isOpen, onClose }) {
                 </div>
               </div>
 
-              <div className="p-4 rounded-2xl bg-slate-900 text-white space-y-2">
-                <div className="font-bold text-cari-400">Offline-First African Cloud Architecture</div>
+              <div className="p-4 rounded-2xl bg-slate-900 text-white space-y-2">                  <div className="font-bold text-cari-400">Offline-First Cloud Architecture</div>
                 <p className="text-slate-300 text-xs leading-relaxed">
                   Designed to support Progressive Web App (PWA) caching, IndexedDB local persistence for unstable internet, and lightweight JSON payloads for mobile networks in Nigeria and Ghana.
                 </p>
@@ -212,8 +213,7 @@ export default function CaseStudyDrawer({ isOpen, onClose }) {
           {activeTab === 'roadmap' && (
             <div className="space-y-3 text-xs">
               <div className="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">
-                <div className="font-bold text-slate-900">1. WhatsApp Conversational Booking Bridge</div>
-                <div className="text-slate-600">Integrate Twilio / Meta WhatsApp Cloud API so patients in West Africa can book appointments and receive e-prescriptions directly in WhatsApp.</div>
+                <div className="font-bold text-slate-900">1. WhatsApp Conversational Booking Bridge</div>                  <div className="text-slate-600">Integrate Twilio / Meta WhatsApp Cloud API so patients can book appointments and receive e-prescriptions directly in WhatsApp.</div>
               </div>
 
               <div className="p-3.5 rounded-xl bg-white border border-slate-200 space-y-1">

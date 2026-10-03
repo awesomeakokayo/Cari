@@ -10,6 +10,8 @@ import {
   Globe2 
 } from 'lucide-react';
 
+// TODO(cari): not currently rendered. Placeholder content below (testimonials,
+// NDPR / 256-bit / 99.98% SLA badges) is unverified — confirm or remove before use.
 export default function TrustMetrics() {
   const testimonials = [
     {
@@ -46,7 +48,7 @@ export default function TrustMetrics() {
         <div className="text-center max-w-3xl mx-auto mb-14 space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cari-100 text-cari-800 text-xs font-bold">
             <Award className="w-3.5 h-3.5" />
-            <span>Trusted Across African Healthcare</span>
+            <span>Trusted by healthcare teams</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-slate-900">
@@ -54,7 +56,7 @@ export default function TrustMetrics() {
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base">
-            Over 1,200 healthcare institutions rely on Cari Medical to deliver high-reliability clinical operations across West Africa.
+            Healthcare teams rely on Cari Medical for smooth, reliable clinical operations.
           </p>
         </div>
 
@@ -110,9 +112,6 @@ export default function TrustMetrics() {
             </span>
             <span className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">
               🔒 256-Bit Encrypted
-            </span>
-            <span className="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-800 text-xs font-bold border border-slate-200">
-              🏛️ MDCN / MDCG Compliant
             </span>
             <span className="px-3 py-1.5 rounded-lg bg-emerald-50 text-emerald-800 text-xs font-bold border border-emerald-200">
               ⚡ 99.98% SLA

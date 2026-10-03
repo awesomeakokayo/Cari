@@ -1,4 +1,6 @@
-﻿export const EHR_FEATURES = [
+﻿// TODO(cari): not currently rendered. The metrics below (2.5 hours, 85%, 40%,
+// 94%, 48 min, etc.) are placeholder figures — confirm or remove before use.
+export const EHR_FEATURES = [
   {
     id: "audio-notes",
     title: "AI Audio Voice Notes",
@@ -8,7 +10,7 @@
     description: "Simply speak during or after patient consultation. Cari's clinical voice engine captures medical terminology, translates local dialects (Hausa, Yoruba, Twi, French, Arabic), and structures notes automatically into standard SOAP formats.",
     metrics: "85% faster chart completion",
     bullets: [
-      "Speech-to-text trained on African medical accents and regional vocabularies",
+      "Speech-to-text trained on medical terminology and regional vocabularies",
       "Automatic ICD-10 diagnostic coding and drug dosage extraction",
       "Real-time multi-lingual patient instructions generation"
     ]
@@ -19,7 +21,7 @@
     subtitle: "Early warning detection and safety drug-interaction checks",
     badge: "Clinical CDS",
     icon: "Sparkles",
-    description: "Machine learning assistance that surfaces early clinical indicators, flags contraindications, and compares symptom trajectories against millions of anonymized African clinical outcomes.",
+    description:      "Machine learning assistance that surfaces early clinical indicators, flags contraindications, and compares symptom trajectories against millions of anonymized clinical outcomes.",
     metrics: "40% reduction in diagnostic oversight",
     bullets: [
       "Real-time cross-checking for adverse drug-drug interactions",

@@ -13,6 +13,8 @@ import {
   Sparkles
 } from 'lucide-react';
 
+// TODO(cari): not currently rendered. Placeholder store badge and rating copy —
+// confirm or remove before this section is used.
 export default function MobileAppSection({ t }) {
   return (
     <section id="mobile-app-section" className="py-20 bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
@@ -94,10 +96,7 @@ export default function MobileAppSection({ t }) {
                 </div>
               </button>
 
-              <div className="flex items-center gap-2 pl-2 text-xs text-slate-500">
-                <div className="flex text-amber-400">★★★★★</div>
-                <span className="font-bold text-slate-700">4.9/5 Rating</span>
-              </div>
+
             </div>
 
           </div>

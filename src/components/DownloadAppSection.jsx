@@ -45,6 +45,8 @@ function LinuxIcon({ className = "w-5 h-5" }) {
 export default function DownloadAppSection({ onGetStarted }) {
   const [showAllDownloads, setShowAllDownloads] = useState(false);
 
+  // TODO(cari): confirm published claims before launch — partner/model names
+  // (MedGemma, Claude, LiveKit) and the HIPAA/GDPR compliance statement.
   const features = [
     {
       title: "Full EHR",
@@ -247,7 +249,7 @@ export default function DownloadAppSection({ onGetStarted }) {
               onClick={onGetStarted}
               className="px-7 py-3 rounded-full bg-white hover:bg-emerald-50 text-[#00a859] text-sm font-bold transition-all shadow-sm hover:scale-[1.02]"
             >
-              Get started free
+              Get started
             </button>
             <button
               onClick={onGetStarted}

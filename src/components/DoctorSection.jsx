@@ -1,5 +1,38 @@
-﻿import React from 'react';
+﻿import React, { useState } from 'react';
 import { User, Calendar, CheckCircle2, ShieldCheck } from 'lucide-react';
+
+// Neutral initials avatar shown when a doctor photo fails to load,
+// so a broken image or alt text never appears on the doctor cards.
+function getInitials(name = '') {
+  const parts = name.replace(/^Dr\.?\s+/i, '').trim().split(/\s+/);
+  const first = parts[0] ? parts[0][0] : '';
+  const last = parts.length > 1 ? parts[parts.length - 1][0] : '';
+  return (first + last).toUpperCase() || '?';
+}
+
+export function DoctorAvatar({ doctor, className = 'w-16 h-16' }) {
+  const [failed, setFailed] = useState(false);
+
+  if (failed) {
+    return (
+      <div
+        className={`${className} rounded-full bg-[#00a859] text-white flex items-center justify-center font-bold border border-slate-200 select-none`}
+        aria-label={doctor.name}
+      >
+        {getInitials(doctor.name)}
+      </div>
+    );
+  }
+
+  return (
+    <img
+      src={doctor.avatar}
+      alt={doctor.name}
+      onError={() => setFailed(true)}
+      className={`${className} rounded-full object-cover border border-slate-200`}
+    />
+  );
+}
 
 export default function DoctorSection({ doctors, onBookNow, onViewProfile }) {
   return (
@@ -29,11 +62,7 @@ export default function DoctorSection({ doctors, onBookNow, onViewProfile }) {
               {/* Card Top */}
               <div>
                 <div className="flex items-start gap-4">
-                  <img
-                    src={doctor.avatar}
-                    alt={doctor.name}
-                    className="w-16 h-16 rounded-full object-cover border border-slate-200"
-                  />
+                  <DoctorAvatar doctor={doctor} />
 
                   <div className="flex-1 min-w-0">
                     <h3 className="text-lg font-bold text-slate-900 truncate">

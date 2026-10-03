@@ -25,7 +25,7 @@ export default function Hero({
             {/* Friendly Trust Tag */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#eefaf2] text-[#00a859] text-xs font-semibold">
               <Heart className="w-3.5 h-3.5 fill-[#00a859]" />
-              <span>Compassionate care from verified African specialists</span>
+              <span>Compassionate care from verified doctors</span>
             </div>
 
             {/* Headline */}
@@ -35,31 +35,31 @@ export default function Hero({
 
             {/* Subhead */}
             <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed max-w-xl">
-              Cari Medical connects you with licensed, empathetic doctors across Africa. Giving clinicians modern EHR tools so you get more personalized, dedicated time.
+              Cari Medical connects you with licensed, empathetic doctors. Our modern EHR tools give clinicians more focused, personal time with every patient.
             </p>
 
             {/* Human Social Proof Stack */}
             <div className="flex items-center gap-4 pt-1">
               <div className="flex -space-x-2">
-                <img 
-                  className="w-10 h-10 rounded-full border-2 border-white object-cover shadow-2xs" 
-                  src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=150" 
-                  alt="Doctor" 
+                <img
+                  className="w-10 h-10 rounded-full border-2 border-white object-cover shadow-2xs"
+                  src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=150"
+                  alt="Doctor"
                 />
-                <img 
-                  className="w-10 h-10 rounded-full border-2 border-white object-cover shadow-2xs" 
-                  src="https://images.unsplash.com/photo-1594824813637-450f3c559850?auto=format&fit=crop&q=80&w=150" 
-                  alt="Doctor" 
+                <img
+                  className="w-10 h-10 rounded-full border-2 border-white object-cover shadow-2xs"
+                  src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=150"
+                  alt="Doctor"
                 />
-                <img 
-                  className="w-10 h-10 rounded-full border-2 border-white object-cover shadow-2xs" 
-                  src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=150" 
-                  alt="Doctor" 
+                <img
+                  className="w-10 h-10 rounded-full border-2 border-white object-cover shadow-2xs"
+                  src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=150"
+                  alt="Doctor"
                 />
-                <img 
-                  className="w-10 h-10 rounded-full border-2 border-white object-cover shadow-2xs" 
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=150" 
-                  alt="Doctor" 
+                <img
+                  className="w-10 h-10 rounded-full border-2 border-white object-cover shadow-2xs"
+                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=150"
+                  alt="Doctor"
                 />
               </div>
 
@@ -95,7 +95,7 @@ export default function Hero({
                     <span>Real Doctors · Genuine Care</span>
                   </div>
                   <div className="text-sm font-bold mt-0.5">
-                    Consult in clinic or via secure video
+                    Book an appointment with a verified doctor
                   </div>
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function Hero({
                   <ShieldCheck className="w-4 h-4" />
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-slate-900">MDCN & MDCG Verified</div>
+                  <div className="text-xs font-bold text-slate-900">MDCN &amp; MDCG Verified</div>
                   <div className="text-[10px] text-slate-500">Accredited Councils</div>
                 </div>
               </div>
